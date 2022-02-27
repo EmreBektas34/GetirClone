@@ -3,6 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GetirClone.App">
     <Application.Resources>
-
+<ResourceDictionary>
+          <OnPlatform x:TypeArguments="x:String" x:Key="fontUI">
+             <On Platform="Android" Value="fontUI.otf#fontUI" />
+             <On Platform="UWP" Value="/Assets/fontUI.otf#fontUI" />
+             <On Platform="iOS" Value="fontUI" />
+          </OnPlatform>
+       </ResourceDictionary>
     </Application.Resources>
 </Application>
